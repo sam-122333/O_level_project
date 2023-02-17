@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="stylesheet.css" />
+
+    <title>Application form</title>
+  </head>
+
+  <body style="background-color: rgb(189, 224, 255)">
+    <div class="div1">
+      <ul>
+        <li class="liClass">
+          <a href="home.html">Home</a>
+        </li>
+        <li class="liClass">
+          <a href="courses.html">Courses</a>
+        </li>
+        <li class="liClass">
+          <a href="about.html">About Us</a>
+        </li>
+        <li class="liClass">
+          <a href="application.html">Application form</a>
+        </li>
+        <li class="liClass">
+          <a href="contact.html">Contact Us</a>
+        </li>
+      </ul>
+      <div class="div2">
+        <h2>Contact details</h2>
+        <p>
+          Email: abc@gmail.com <br />
+          contact number: +91987635242 <br />
+          address: sector 10 C, vrindavan yojna, Lucknow
+        </p>
+        <form onsubmit="onSubmitForm()">
+          <table>
+            <tr>
+              <td colspan="2">
+                <h1>
+                  <center>Raise your query</center>
+                </h1>
+
+                <hr />
+              </td>
+            </tr>
+            <tr>
+              <td><label>Your name:</label></td>
+              <td><input type="text" required /></td>
+            </tr>
+
+            <tr>
+              <td><label>Mobile number</label></td>
+              <td><input type="number" required /></td>
+            </tr>
+            <tr>
+              <td><label>E-mail</label></td>
+              <td><input type="email" required /></td>
+            </tr>
+            <tr>
+              <td><label>Your query</label></td>
+              <td>
+                <textarea
+                  id="subject"
+                  name="subject"
+                  placeholder="Write something.."
+                  style="height: 200px"
+                ></textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td colspan="2">
+                <input
+                  style="width: 80px"
+                  type="submit"
+                  value="submit"
+                  required
+                />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
